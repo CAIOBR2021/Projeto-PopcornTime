@@ -1,0 +1,105 @@
+#navbar {
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0)
+    linear-gradient(to right, rgb(35, 37, 38), rgb(65, 67, 69)) repeat scroll 0%
+    0%;
+  /* background: #121212; */
+  border-bottom: 10px double #f7d354;
+  /* box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); */
+}
+
+.space {
+    display: flex;
+    gap: 1rem;
+}
+
+#navbar h2 a {
+  display: flex;
+  align-items: center;
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #f7d354;
+  animation: neonAnim 2s alternate-reverse infinite;
+}
+
+#navbar h2 a p {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #f7d354;
+    animation: neonAnim 2s alternate-reverse infinite;
+  }
+
+@keyframes neonAnim {
+  from {
+    text-shadow: 0 0 10px rgba(247, 211, 84, 0.7),
+      0 0 40px rgba(247, 211, 84, 0.7), 0 0 100px rgba(247, 211, 84, 0.7);
+  }
+  to {
+    text-shadow: 0 0 5px rgba(247, 211, 84, 0.7),
+      0 0 20px rgba(247, 211, 84, 0.7), 0 0 60px rgba(247, 211, 84, 0.7);
+  }
+}
+
+#navbar h2 a strong {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #c4f8fa;
+  animation: neonAniv 2s alternate-reverse infinite;
+}
+
+@keyframes neonAniv {
+  from {
+    text-shadow: 0 0 10px rgba(196, 248, 250, 0.7),
+      0 0 40px rgba(196, 248, 250, 0.7), 0 0 100px rgba(196, 248, 250, 0.7);
+  }
+  to {
+    text-shadow: 0 0 5px rgba(196, 248, 250, 0.7),
+      0 0 20px rgba(196, 248, 250, 0.7), 0 0 60px rgba(196, 248, 250, 0.7);
+  }
+}
+
+#navbar h2 {
+  font-size: 4rem;
+}
+
+#navbar form {
+  display: flex;
+  gap: 0.4rem;
+}
+
+#navbar input {
+  background: #888;
+  padding: 0.2rem 0.8rem;
+  border-radius: 4px;
+  border: none;
+}
+
+#navbar input:focus {
+  outline: none;
+  outline: 2px solid #f7d354;
+}
+
+#navbar form button {
+  background: #f7d354;
+  border: 2px solid #f7d354;
+  border-radius: 4px;
+  color: #000;
+  padding: 0.3rem;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#navbar form button:hover {
+  background: transparent;
+  color: #f7d354;
+}
